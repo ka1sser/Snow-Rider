@@ -1177,7 +1177,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.986266, y: 2.7, z: -10.001135}
+  m_LocalPosition: {x: 6.896701, y: 2.689, z: -10.001135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1282,7 +1282,7 @@ Transform:
   m_GameObject: {fileID: 636026055}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.986266, y: 2.7, z: -10.001135}
+  m_LocalPosition: {x: 6.896701, y: 2.689, z: -10.001135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1316,7 +1316,7 @@ Transform:
   m_GameObject: {fileID: 808340762}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.38, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0.902, y: 0.403, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1374,7 +1374,7 @@ ParticleSystemRenderer:
   m_LengthScale: 2
   m_SortingFudge: 0
   m_NormalDirection: 1
-  m_ShadowBias: 0
+  m_ShadowBias: 100
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
@@ -1411,7 +1411,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -1467,7 +1467,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -1477,8 +1477,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.15
-      minScalar: 0.1
+      scalar: 0.1
+      minScalar: 0.05
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1530,8 +1530,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 25
-      minScalar: 20
+      scalar: 7
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -6143,7 +6143,7 @@ Transform:
   m_GameObject: {fileID: 1280455378}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.02879412, w: 0.99958533}
-  m_LocalPosition: {x: 0.06912279, y: -0.45791394, z: 0}
+  m_LocalPosition: {x: 0.546, y: -0.716, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6275,7 +6275,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -11086,7 +11086,7 @@ Transform:
   m_GameObject: {fileID: 1549082784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0064347, y: 2.7, z: -0.001134705}
+  m_LocalPosition: {x: -1.096, y: 2.689, z: -0.001134705}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11127,8 +11127,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06049992, y: -0.9230281}
-  m_Size: {x: 2.822345, y: 0.23672226}
+  m_Offset: {x: 0.5655504, y: -1.1898826}
+  m_Size: {x: 2.8672688, y: 0.20806244}
   m_Direction: 1
 --- !u!58 &1549082790
 CircleCollider2D:
@@ -11162,9 +11162,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.39, y: 0.66}
+  m_Offset: {x: 0.9161217, y: 0.43095565}
   serializedVersion: 2
-  m_Radius: 0.31850213
+  m_Radius: 0.29616725
 --- !u!114 &1549082791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11191,6 +11191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTimeDelay: 0.5
+  crashEffect: {fileID: 808340765}
 --- !u!1 &2128259027
 GameObject:
   m_ObjectHideFlags: 0
@@ -11217,7 +11218,7 @@ Transform:
   m_GameObject: {fileID: 2128259027}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.02879412, w: 0.99958533}
-  m_LocalPosition: {x: -0.19824898, y: 0.15073824, z: 0}
+  m_LocalPosition: {x: 0.336, y: -0.107, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
